@@ -1,0 +1,32 @@
+# Test data for features/customer_profile_management.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+
+POS-08:
+  firstName: John
+  lastName: Doe
+  email: john.doe@bankcorp.com
+  phone: "555-0102"
+  dateOfBirth: "1990-01-15"
+  address:
+    street: 123 Main St
+    city: Springfield
+    state: IL
+    zipCode: "62701"
+    country: USA
+
+POS-09:
+  firstName: Jane
+  lastName: Smith
+  email: jane.smith@bankcorp.com
+
+VAL-01:
+  email: not-an-email
+
+BND-14:
+  email: an-unusually-long-email-address-value@example-domain-name.com
+
+VAL-02:
+  phone: not-a-valid-phone-number
+
+VAL-03:
+  dateOfBirth: not-a-date

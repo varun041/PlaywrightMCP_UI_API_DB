@@ -1,0 +1,36 @@
+# Test data for features/user_authentication.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+# Scenarios that reuse another scenario's preconditions (e.g. "using test data
+# 'POS-01'") intentionally point at the same entry rather than duplicating it.
+
+POS-01:
+  username: teller_jane
+  password: SecurePass123
+  email: jane@bankcorp.com
+
+NEG-01:
+  existingUsername: teller_jane
+  newUsername: teller_jane
+  newPassword: AnotherPass1
+  newEmail: jane2@bankcorp.com
+
+NEG-03:
+  username: teller_jane
+  password: WrongPassword
+
+NEG-04:
+  username: ghost_user
+  password: SomePass123
+
+SEC-06:
+  username: teller_jane
+  password: WrongPassword
+  attempts: 10
+
+# Referenced by session_and_token_management.feature's "Multiple concurrent logins" scenario
+# (the "Given I am registered..." step is shared across feature files but always reads from this
+# file — see authentication.steps.ts's ensureRegistered).
+AUTHN-07:
+  username: teller_concurrent
+  password: SecurePass123
+  email: concurrent@bankcorp.com

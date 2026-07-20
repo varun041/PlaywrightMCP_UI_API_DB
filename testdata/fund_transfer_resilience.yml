@@ -1,0 +1,8 @@
+# Test data for features/fund_transfer_resilience.feature
+# No hardcoded business data values are present in this feature file today
+# (all scenarios describe conditions narratively, e.g. "a balance that
+# covers only one of two simultaneous transfer requests"). This file is
+# kept for structural consistency with the other testdata/*.yml files and
+# as the designated home for concrete values once these scenarios are
+# implemented (e.g. specific balances/amounts used to drive the race
+# condition and retry probes).

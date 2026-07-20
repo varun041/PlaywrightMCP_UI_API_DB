@@ -1,0 +1,18 @@
+# Test data for features/fund_transfer.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+
+BND-05:
+  startingBalance: 100
+  transferAmount: 100
+  outcome: "succeeds, leaving a zero balance"
+
+BND-06:
+  startingBalance: 100
+  transferAmount: 100.01
+  outcome: "rejected as insufficient funds"
+
+BND-07:
+  transferAmount: 10.005
+
+BND-08:
+  transferAmount: 0.01

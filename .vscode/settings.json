@@ -1,0 +1,21 @@
+{
+  "cucumberautocomplete.steps": [
+    "tests/step-definitions/**/*.steps.ts"
+  ],
+  "cucumberautocomplete.syncfeatures": "features/**/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": false,
+  "cucumberautocomplete.strictGherkinValidation": false,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": true,
+  "cucumberautocomplete.customParameters": [
+    { "parameter": "{int}", "value": "-?\\d+" },
+    { "parameter": "{float}", "value": "-?\\d*\\.?\\d+" },
+    { "parameter": "{string}", "value": "\"[^\"]*\"" },
+    { "parameter": "{word}", "value": "[^\\s]+" }
+  ],
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\(",
+  "cucumberautocomplete.onTypeFormat": true,
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  }
+}

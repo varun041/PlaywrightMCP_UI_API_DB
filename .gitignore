@@ -1,0 +1,27 @@
+
+# Playwright
+node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+/.playwright-mcp/
+
+# playwright-bdd generated glue + our framework's generated artifacts
+/tests/.features-gen/
+/reports/
+/tests/DB/.runtime/
+
+# Secrets / local config
+.env
+.mcp.json
+.vscode/mcp.json
+.claude/settings.local.json
+
+# SQLite runtime files
+*.db-shm
+*.db-wal
+
+# TypeScript build output
+/dist/
