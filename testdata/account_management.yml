@@ -1,0 +1,29 @@
+# Test data for features/account_management.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+
+POS-12:
+  accountType: CHECKING
+
+POS-13-SAVINGS:
+  accountType: SAVINGS
+
+POS-13-BUSINESS:
+  accountType: BUSINESS
+
+POS-13-CREDIT:
+  accountType: CREDIT
+
+VAL-04:
+  accountType: FOO
+
+VAL-05:
+  accountType: CHECKING
+  currency: ZZZ
+
+BND-09:
+  accountType: CHECKING
+  balance: null
+
+BND-10:
+  accountType: CHECKING
+  balance: -500

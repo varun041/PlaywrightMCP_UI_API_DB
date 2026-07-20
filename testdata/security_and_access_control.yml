@@ -1,0 +1,10 @@
+# Test data for features/security_and_access_control.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+
+AUTHZ-01:
+  creatorUsername: teller_jane
+  otherUsername: teller_mike
+
+AUTHZ-02:
+  creatorUsername: teller_jane
+  otherUsername: teller_mike

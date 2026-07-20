@@ -1,0 +1,8 @@
+# Test data for features/customer_search_and_directory.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+# Most scenarios in this feature describe their inputs generically (e.g. "a
+# name that matches an existing customer") rather than embedding a literal
+# value, so only the wildcard-character search case needs an entry here.
+
+BND-12:
+  query: "50%_off"

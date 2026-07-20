@@ -1,0 +1,6 @@
+# Test data for features/session_and_token_management.feature
+# Each top-level key is a TestCaseId referenced from the feature file's steps.
+
+AUTHN-07:
+  username: teller_jane
+  password: SecurePass123

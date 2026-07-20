@@ -16,8 +16,16 @@ jobs:
         node-version: lts/*
     - name: Install dependencies
       run: npm ci
+    - name: Install backend dependencies
+      run: npm ci
+      working-directory: banking-app/backend
+    - name: Install frontend dependencies
+      run: npm ci
+      working-directory: banking-app/frontend
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
+    - name: Generate BDD spec files
+      run: npm run bdd:gen
     - name: Run Playwright tests
       run: npx playwright test
     - uses: actions/upload-artifact@v4

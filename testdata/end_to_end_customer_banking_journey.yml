@@ -1,0 +1,5 @@
+# Test data for features/end_to_end_customer_banking_journey.feature
+# No hardcoded business data values are present in this feature file today.
+# This file is kept for structural consistency with the other
+# testdata/*.yml files and as the designated home for concrete values once
+# additional cross-capability journey scenarios are added.
