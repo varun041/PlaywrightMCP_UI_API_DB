@@ -1,0 +1,13 @@
+[2026-07-22T16:32:30.934Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:30.935Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737950853-d2b244","userId":"USER-1784737950933-24ddac48"}
+[2026-07-22T16:32:30.954Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.966Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.966Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.968Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.971Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.973Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.973Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.974Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.974Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.975Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-22T16:32:30.985Z] [INFO] [customer-search.steps] Large-limit list under concurrent load {"concurrency":10,"minMs":14,"maxMs":30}

@@ -1,0 +1,5 @@
+[2026-07-22T16:32:25.049Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:25.049Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737944967-f52075","userId":"USER-1784737945048-d12b99ea"}
+[2026-07-22T16:32:25.056Z] [INFO] [TestDataLoader] Loaded customer_profile_management.yml {"keys":["POS-08","POS-09","VAL-01","BND-14","VAL-02","VAL-03"]}
+[2026-07-22T16:32:25.059Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:25.065Z] [INFO] [ApiClient] GET customers/CUST-1784737945058-21669724 -> 200

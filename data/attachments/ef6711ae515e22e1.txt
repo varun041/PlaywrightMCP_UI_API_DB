@@ -1,0 +1,12 @@
+[2026-07-22T16:32:16.972Z] [INFO] [api.fixtures] Opened worker-scoped APIRequestContext {"baseURL":"http://localhost:3000/api/"}
+[2026-07-22T16:32:17.090Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:17.090Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737936974-3cda5e","userId":"USER-1784737937081-48c76d84"}
+[2026-07-22T16:32:17.101Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:17.106Z] [INFO] [ApiClient] GET customers/CUST-1784737937097-64a95be6 -> 200
+[2026-07-22T16:32:17.106Z] [INFO] [data.fixtures] Seeded customer {"id":"CUST-1784737937097-64a95be6"}
+[2026-07-22T16:32:17.154Z] [INFO] [db.fixtures] Opening worker-scoped DbService
+[2026-07-22T16:32:17.166Z] [INFO] [TestDataLoader] Loaded account_management.yml {"keys":["POS-12","POS-13-SAVINGS","POS-13-BUSINESS","POS-13-CREDIT","VAL-04","VAL-05","BND-09","BND-10"]}
+[2026-07-22T16:32:17.172Z] [INFO] [ApiClient] POST customers/CUST-1784737937097-64a95be6/accounts -> 201
+[2026-07-22T16:32:17.186Z] [INFO] [ApiClient] GET customers/CUST-1784737937097-64a95be6/accounts -> 200
+[2026-07-22T16:32:17.195Z] [INFO] [ApiClient] DELETE customers/CUST-1784737937097-64a95be6 -> 200
+[2026-07-22T16:32:17.195Z] [INFO] [data.fixtures] Deleted seeded customer {"id":"CUST-1784737937097-64a95be6"}

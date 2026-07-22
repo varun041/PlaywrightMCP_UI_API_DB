@@ -1,0 +1,14 @@
+[2026-07-22T16:33:12.132Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:33:12.133Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737992049-7c4a72","userId":"USER-1784737992131-18f75395"}
+[2026-07-22T16:33:12.137Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:33:12.138Z] [INFO] [ApiClient] GET customers/CUST-1784737992135-79a9a506 -> 200
+[2026-07-22T16:33:12.139Z] [INFO] [data.fixtures] Seeded customer {"id":"CUST-1784737992135-79a9a506"}
+[2026-07-22T16:33:12.141Z] [INFO] [ApiClient] POST customers/CUST-1784737992135-79a9a506/accounts -> 201
+[2026-07-22T16:33:12.141Z] [INFO] [data.fixtures] Seeded account {"id":"ACC-1784737992140-8fb012a0","accountNumber":"7401391102"}
+[2026-07-22T16:33:12.146Z] [INFO] [ApiClient] POST customers/CUST-1784737992135-79a9a506/accounts -> 201
+[2026-07-22T16:33:12.324Z] [INFO] [ApiClient] POST accounts/transfer -> 201
+[2026-07-22T16:33:12.718Z] [INFO] [AppNavigator] Logged in {"username":"teller_1784737992049-7c4a72"}
+[2026-07-22T16:33:13.802Z] [INFO] [ApiClient] DELETE accounts/ACC-1784737992140-8fb012a0 -> 200
+[2026-07-22T16:33:13.802Z] [INFO] [data.fixtures] Deleted seeded account {"id":"ACC-1784737992140-8fb012a0"}
+[2026-07-22T16:33:13.805Z] [INFO] [ApiClient] DELETE customers/CUST-1784737992135-79a9a506 -> 200
+[2026-07-22T16:33:13.805Z] [INFO] [data.fixtures] Deleted seeded customer {"id":"CUST-1784737992135-79a9a506"}

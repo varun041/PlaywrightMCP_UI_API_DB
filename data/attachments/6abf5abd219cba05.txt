@@ -1,0 +1,8 @@
+[2026-07-22T16:32:38.735Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:38.818Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:38.820Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:38.823Z] [INFO] [ApiClient] POST customers/CUST-1784737958819-cd394bec/accounts -> 201
+[2026-07-22T16:32:38.825Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:38.829Z] [INFO] [ApiClient] POST customers/CUST-1784737958824-e0156f5d/accounts -> 201
+[2026-07-22T16:32:38.912Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:38.916Z] [INFO] [ApiClient] POST accounts/transfer -> 201

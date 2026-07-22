@@ -1,0 +1,7 @@
+[2026-07-22T16:32:48.311Z] [INFO] [BackendProcessManager] Spawned backend process {"pid":6366,"port":46783,"dbPath":"/home/runner/work/PlaywrightMCP_UI_API_DB/PlaywrightMCP_UI_API_DB/tests/DB/.runtime/restart-check-1784737968307.db"}
+[2026-07-22T16:32:48.931Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:48.936Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:48.938Z] [INFO] [ProcessUtils] Killed process tree {"pid":6366}
+[2026-07-22T16:32:48.943Z] [INFO] [BackendProcessManager] Spawned backend process {"pid":6377,"port":46783,"dbPath":"/home/runner/work/PlaywrightMCP_UI_API_DB/PlaywrightMCP_UI_API_DB/tests/DB/.runtime/restart-check-1784737968307.db"}
+[2026-07-22T16:32:49.462Z] [INFO] [ApiClient] GET customers/CUST-1784737968935-a4144a8e -> 200
+[2026-07-22T16:32:49.464Z] [INFO] [ProcessUtils] Killed process tree {"pid":6377}

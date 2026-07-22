@@ -1,0 +1,1 @@
+[2026-07-22T16:32:26.476Z] [WARN] [customer-profile.steps] @KnownGap: Deleting a customer does not cascade-delete accounts/transactions (Requirement.md R-6/BR-11).

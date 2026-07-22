@@ -1,0 +1,4 @@
+[2026-07-22T16:32:31.082Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:31.082Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737950999-081b84","userId":"USER-1784737951080-b140f609"}
+[2026-07-22T16:32:31.515Z] [INFO] [AppNavigator] Logged in {"username":"teller_1784737950999-081b84"}
+[2026-07-22T16:32:32.116Z] [INFO] [ApiClient] POST customers/CUST-1784737951738-78b3a49a/accounts -> 201

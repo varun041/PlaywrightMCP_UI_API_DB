@@ -1,0 +1,1 @@
+[2026-07-22T16:32:32.518Z] [WARN] [transfer-resilience.steps] @KnownGap: Balance updates during a transfer are two separate UPDATEs with no DB transaction/locking (Requirement.md R-4).

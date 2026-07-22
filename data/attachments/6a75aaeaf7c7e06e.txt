@@ -1,0 +1,9 @@
+[2026-07-22T16:32:26.445Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-22T16:32:26.445Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737946364-ff599f","userId":"USER-1784737946444-7b16c3e4"}
+[2026-07-22T16:32:26.453Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-22T16:32:26.455Z] [INFO] [ApiClient] GET customers/CUST-1784737946452-0e320b1a -> 200
+[2026-07-22T16:32:26.458Z] [INFO] [ApiClient] POST customers/CUST-1784737946452-0e320b1a/accounts -> 201
+[2026-07-22T16:32:26.461Z] [INFO] [ApiClient] POST customers/CUST-1784737946452-0e320b1a/accounts -> 201
+[2026-07-22T16:32:26.465Z] [INFO] [ApiClient] POST accounts/transfer -> 201
+[2026-07-22T16:32:26.468Z] [INFO] [ApiClient] DELETE customers/CUST-1784737946452-0e320b1a -> 200
+[2026-07-22T16:32:26.471Z] [INFO] [ApiClient] GET customers/CUST-1784737946452-0e320b1a -> 404
