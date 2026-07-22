@@ -5,6 +5,10 @@ on:
   pull_request:
     branches: [ main, master ]
   workflow_dispatch: {}
+
+permissions:
+  contents: write
+
 jobs:
   test:
     timeout-minutes: 60
@@ -32,11 +36,27 @@ jobs:
       with:
         distribution: temurin
         java-version: '21'
+    # Pulls the previous run's `history/` folder off the gh-pages branch (if one exists yet) so
+    # `allure generate` below can fold it in, which is what makes Allure's trend/history graphs
+    # span across runs instead of resetting every time. Harmless no-op on the very first run,
+    # on PRs (gh-pages branch may not reflect PR state), or if gh-pages doesn't exist yet.
+    - name: Fetch previous Allure history
+      if: ${{ !cancelled() && github.event_name == 'push' }}
+      continue-on-error: true
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        path: gh-pages-history
     - name: Run Playwright tests
       run: npx playwright test
     - name: Generate Allure report
       if: ${{ !cancelled() }}
-      run: npx allure generate reports/allure-results --clean -o reports/allure
+      run: |
+        mkdir -p reports/allure-results/history
+        if [ -d gh-pages-history/history ]; then
+          cp -r gh-pages-history/history/. reports/allure-results/history/
+        fi
+        npx allure generate reports/allure-results --clean -o reports/allure
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
@@ -49,3 +69,13 @@ jobs:
         name: allure-report
         path: reports/allure/
         retention-days: 30
+    # Only push a live report for commits actually landed on main/master — PR runs still get the
+    # allure-report artifact above, but publishing every PR's report to the same gh-pages site
+    # would let untrusted PR branches overwrite what main's report shows.
+    - name: Publish Allure report to GitHub Pages
+      if: ${{ !cancelled() && github.event_name == 'push' }}
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: gh-pages
+        publish_dir: reports/allure
