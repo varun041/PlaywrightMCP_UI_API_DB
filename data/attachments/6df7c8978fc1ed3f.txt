@@ -1,0 +1,1 @@
+[2026-07-23T12:11:15.047Z] [WARN] [authentication.steps] @KnownGap: No login rate-limiting/lockout exists (TestScenarios.md SEC-06) — repeated failed attempts are never throttled.

@@ -1,2 +1,0 @@
-[2026-07-22T16:32:51.508Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-22T16:32:51.589Z] [INFO] [ApiClient] POST auth/login -> 200

@@ -1,0 +1,1 @@
+[2026-07-23T12:10:44.226Z] [WARN] [account.steps] @KnownGap: No overdraft/minimum-balance business rule is defined for negative/omitted balances at creation (Requirement.md BR-13, Q3).

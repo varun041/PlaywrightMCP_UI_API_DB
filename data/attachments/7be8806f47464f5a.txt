@@ -1,5 +1,0 @@
-[2026-07-22T16:32:38.550Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-22T16:32:38.552Z] [INFO] [ApiClient] POST customers -> 201
-[2026-07-22T16:32:38.555Z] [INFO] [ApiClient] POST customers/CUST-1784737958551-a7e10ed8/accounts -> 201
-[2026-07-22T16:32:38.636Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-22T16:32:38.639Z] [INFO] [ApiClient] DELETE accounts/ACC-1784737958554-cbe7a749 -> 200

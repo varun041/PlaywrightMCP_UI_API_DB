@@ -1,3 +1,0 @@
-[2026-07-22T16:34:27.864Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-22T16:34:27.864Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784738067781-1bf099","userId":"USER-1784738067863-70577185"}
-[2026-07-22T16:34:28.858Z] [INFO] [AccessibilityScanner] Accessibility scan complete {"total":0,"criticalOrSerious":0}

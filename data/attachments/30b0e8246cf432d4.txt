@@ -1,3 +1,0 @@
-[2026-07-22T16:32:25.502Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-22T16:32:25.502Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784737945420-6e7520","userId":"USER-1784737945500-ba759a32"}
-[2026-07-22T16:32:25.508Z] [INFO] [ApiClient] POST customers -> 400

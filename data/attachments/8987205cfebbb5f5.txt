@@ -1,0 +1,3 @@
+[2026-07-23T12:11:10.179Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-23T12:11:10.179Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784808670094-700176","userId":"USER-1784808670177-2de87497"}
+[2026-07-23T12:11:10.185Z] [INFO] [ApiClient] GET customers/CUST-does-not-exist -> 404
