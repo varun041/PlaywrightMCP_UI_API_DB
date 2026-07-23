@@ -1,5 +1,6 @@
 import { Given, When, Then, expect } from './support/bdd';
 import { ScenarioState, DerivedCredentials, getLastRegisteredCredentials, setLastRegisteredCredentials } from './support/bdd';
+import { LoginPage } from '@pages/LoginPage';
 import { TestData } from '@utils/TestDataLoader';
 import { RandomDataGenerator } from '@utils/RandomDataGenerator';
 import { TokenUtils } from '@utils/TokenUtils';
@@ -243,7 +244,7 @@ Then('no unintended side effects should occur from the retry', async ({ state })
 // --- Logout (UI) ----------------------------------------------------------------------------
 
 Then('I should be returned to the login screen', async ({ page }) => {
-  await expect(page.locator('.login-form h2')).toHaveText('Login');
+  await expect(new LoginPage(page).heading).toHaveText('Login');
 });
 
 Then('my session token should no longer be used by the application', async ({ page }) => {
@@ -275,7 +276,7 @@ Then('the validation error should be exposed in a way that assistive technology 
   // The app renders no custom aria-live error for this case (TestScenarios.md A11Y-05 documents
   // this as a gap) — the native `required` HTML5 constraint validation is the only currently
   // accessible signal, which browsers do expose via the accessibility tree.
-  const usernameInput = page.getByPlaceholder('Username');
+  const usernameInput = new LoginPage(page).usernameInput.element;
   const isInvalid = await usernameInput.evaluate((el: HTMLInputElement) => !el.validity.valid);
   const validationMessage = await usernameInput.evaluate((el: HTMLInputElement) => el.validationMessage);
   expect(isInvalid).toBe(true);

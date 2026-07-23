@@ -17,7 +17,7 @@ export class LoginPage extends BasePage {
     return new LoginPage(page);
   }
 
-  private get usernameInput(): TextInput {
+  get usernameInput(): TextInput {
     return new TextInput(this.page.getByPlaceholder(Selectors.login.usernamePlaceholder));
   }
 
@@ -37,20 +37,24 @@ export class LoginPage extends BasePage {
     return new Link(toRegister.or(toLogin));
   }
 
-  private get headingLocator(): Locator {
-    return this.page.locator('.login-form').getByRole('heading', { level: 2 });
+  // `.auth-panel` (formerly `.login-form`) wraps the heading + form after the redesign.
+  get heading(): Locator {
+    return this.page.locator('.auth-panel').getByRole('heading', { level: 2 });
   }
 
   // Role-based rather than a raw `button[type="submit"]` CSS attribute chain; matches either mode's
-  // accessible name since the label itself changes ('Login' vs 'Register').
+  // accessible name since the label itself changes ('Login' vs 'Register'). Must be `exact: true`
+  // with the full word — the toggle link's accessible name ("Don't have an account? Register")
+  // also contains "Regis", so a substring match on either button ambiguously matches both and
+  // throws a strict-mode violation.
   private get submitButton(): Button {
-    const loginBtn = this.page.locator('.login-form').getByRole('button', { name: Selectors.login.submitButton('Login'), exact: true });
-    const registerBtn = this.page.locator('.login-form').getByRole('button', { name: Selectors.login.submitButton('Register'), exact: true });
+    const loginBtn = this.page.locator('.auth-panel').getByRole('button', { name: Selectors.login.submitButton('Login'), exact: true });
+    const registerBtn = this.page.locator('.auth-panel').getByRole('button', { name: Selectors.login.submitButton('Register'), exact: true });
     return new Button(loginBtn.or(registerBtn));
   }
 
   async getHeadingText(): Promise<string> {
-    return (await this.headingLocator.innerText()).trim();
+    return (await this.heading.innerText()).trim();
   }
 
   async isInLoginMode(): Promise<boolean> {
@@ -63,14 +67,14 @@ export class LoginPage extends BasePage {
       // Wait for the heading to actually flip before returning — the caller (login()/register())
       // fills inputs immediately after, and relying on the click's promise alone doesn't guarantee
       // the React re-render (and thus the swapped input set) has landed yet.
-      await expect(this.headingLocator).toHaveText(Selectors.login.heading('Register'));
+      await expect(this.heading).toHaveText(Selectors.login.heading('Register'));
     }
   }
 
   async switchToLoginMode(): Promise<void> {
     if (!(await this.isInLoginMode())) {
       await this.toggleLink.click();
-      await expect(this.headingLocator).toHaveText(Selectors.login.heading('Login'));
+      await expect(this.heading).toHaveText(Selectors.login.heading('Login'));
     }
   }
 

@@ -36,7 +36,7 @@ export class CustomerDetailsPage extends BasePage {
   }
 
   async getProfile(): Promise<DisplayedCustomerProfile> {
-    const infoGrid = this.page.locator('.info-grid');
+    const infoGrid = this.page.locator('.profile-grid');
     // Scoped to direct children of `.info-grid` (`> div`) rather than any descendant div — narrows
     // the `hasText` match so a nested/unrelated div containing the label text elsewhere can't be
     // picked up instead of the actual field row.

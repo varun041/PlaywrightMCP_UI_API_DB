@@ -25,7 +25,7 @@ export function LoginForm({ onSuccess }) {
 
   return (
     <div className="login-container">
-      <div className="login-form">
+      <div className="auth-panel">
         <h2>{isLogin ? 'Login' : 'Register'}</h2>
         {error && <div className="error">{error}</div>}
 
@@ -33,7 +33,7 @@ export function LoginForm({ onSuccess }) {
           <input
             type="text"
             aria-label="Username"
-            placeholder="Username"
+            placeholder="User Name"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             required

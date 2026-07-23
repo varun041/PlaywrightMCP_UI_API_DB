@@ -85,7 +85,7 @@ export function CustomerDetails({ customerId, onBack, onEdit }) {
 
       <div className="customer-info">
         <h2>{customer.firstName} {customer.lastName}</h2>
-        <div className="info-grid">
+        <div className="profile-grid">
           <div>
             <label>Email:</label>
             <p>{customer.email}</p>

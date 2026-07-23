@@ -81,7 +81,7 @@ export function CustomerList({ onSelectCustomer, onAddClick }) {
             aria-label="Search field filter"
             value={searchFilter}
             onChange={(e) => setSearchFilter(e.target.value)}
-            className="filter-select"
+            className="search-filter-select"
           >
             <option value="">All Fields</option>
             <option value="email">Email</option>

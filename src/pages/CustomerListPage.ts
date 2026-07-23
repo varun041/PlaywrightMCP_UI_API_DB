@@ -21,7 +21,7 @@ export class CustomerListPage extends BasePage {
   }
 
   private get filterSelect(): SelectDropdown {
-    return new SelectDropdown(this.page.locator('.filter-select'));
+    return new SelectDropdown(this.page.locator('.search-filter-select'));
   }
 
   private get searchButton(): Button {

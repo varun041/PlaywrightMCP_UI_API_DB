@@ -9,6 +9,7 @@ import { ApiMessages } from '@constants/messages';
 import { ApiResult } from '@services/ApiClient';
 import { AuthSuccessResponse } from '@app-types/domain';
 import { AppHeader } from '@components/AppHeader';
+import { LoginPage } from '@pages/LoginPage';
 import { ErrorBanner } from '@widgets/ErrorBanner';
 import { Selectors } from '@constants/selectors';
 import { Logger } from '@utils/Logger';
@@ -145,7 +146,7 @@ Then('both issued tokens should independently authorize protected requests', asy
 // --- Client-side session lifecycle (UI) ------------------------------------------------------
 
 Then('the application should show the login screen on the next protected action', async ({ page }) => {
-  await expect(page.locator('.login-form h2')).toBeVisible();
+  await expect(new LoginPage(page).heading).toBeVisible();
 });
 
 Given('I have captured my current access token', async ({ registeredUser, state }) => {

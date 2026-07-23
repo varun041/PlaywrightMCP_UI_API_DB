@@ -10,7 +10,7 @@ export const Selectors = {
   },
   login: {
     heading: (mode: 'Login' | 'Register') => mode,
-    usernamePlaceholder: 'Username',
+    usernamePlaceholder: 'User Name',
     emailPlaceholder: 'Email',
     passwordPlaceholder: 'Password',
     submitButton: (mode: 'Login' | 'Register') => mode,
