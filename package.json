@@ -15,7 +15,7 @@
     "test:api": "node scripts/run-with-allure.js --grep @API",
     "test:db": "node scripts/run-with-allure.js --grep @DB",
     "test:report": "playwright show-report reports/html",
-    "allure:report": "allure generate reports/allure-results --clean -o reports/allure && allure open reports/allure",
+    "allure:report": "node scripts/generate-run-summary.js && allure generate reports/allure-results --clean -o reports/allure && allure open reports/allure",
     "bdd:gen": "bddgen",
     "typecheck": "tsc --noEmit"
   },
