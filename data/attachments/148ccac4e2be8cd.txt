@@ -1,0 +1,1 @@
+[2026-07-24T09:31:15.291Z] [WARN] [customer-profile.steps] @KnownGap: PUT/DELETE /customers/:id perform no existence check (TestScenarios.md NEG-10/NEG-11).

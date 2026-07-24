@@ -1,0 +1,11 @@
+[2026-07-24T09:31:40.547Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:40.640Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:40.731Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:40.823Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:40.914Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.005Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.096Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.187Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.278Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.370Z] [INFO] [ApiClient] POST auth/login -> 401
+[2026-07-24T09:31:41.461Z] [INFO] [ApiClient] POST auth/login -> 401

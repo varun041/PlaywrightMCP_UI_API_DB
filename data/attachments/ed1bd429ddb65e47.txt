@@ -1,1 +1,0 @@
-[2026-07-23T12:11:02.345Z] [WARN] [security.steps] @KnownGap: No customer/account ownership or tenancy model exists (Requirement.md R-2).

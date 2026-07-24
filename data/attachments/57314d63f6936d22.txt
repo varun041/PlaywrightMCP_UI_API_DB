@@ -1,5 +1,0 @@
-[2026-07-23T12:11:01.961Z] [INFO] [TestDataLoader] Loaded security_and_access_control.yml {"keys":["AUTHZ-01","AUTHZ-02"]}
-[2026-07-23T12:11:02.047Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-23T12:11:02.051Z] [INFO] [ApiClient] POST customers -> 201
-[2026-07-23T12:11:02.138Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-23T12:11:02.143Z] [INFO] [ApiClient] GET customers/CUST-1784808662049-0250ace4 -> 200

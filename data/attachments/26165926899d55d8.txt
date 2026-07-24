@@ -1,1 +1,0 @@
-[2026-07-23T12:11:04.653Z] [WARN] [security.steps] @KnownGap: JWT_SECRET falls back to the hardcoded literal "your_jwt_secret_key" when unset (Requirement.md R-1).

@@ -1,0 +1,1 @@
+[2026-07-24T09:31:18.182Z] [WARN] [customer-search.steps] @KnownGap: `parseInt(req.query.limit) || 10` treats limit=0 as falsy, silently falling back to the default page size (TestScenarios.md BND-01).

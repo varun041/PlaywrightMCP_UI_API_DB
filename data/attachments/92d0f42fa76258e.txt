@@ -1,4 +1,0 @@
-[2026-07-23T12:11:15.752Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-23T12:11:15.752Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784808675666-49e8ca","userId":"USER-1784808675751-02c6e346"}
-[2026-07-23T12:11:16.135Z] [INFO] [AppNavigator] Logged in {"username":"teller_1784808675666-49e8ca"}
-[2026-07-23T12:11:16.135Z] [INFO] [page.fixtures] authenticatedPage ready {"username":"teller_1784808675666-49e8ca"}

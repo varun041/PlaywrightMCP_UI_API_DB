@@ -1,0 +1,15 @@
+[2026-07-24T09:31:22.159Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:22.159Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784885482068-c4a3e5","userId":"USER-1784885482157-8aa3ba60"}
+[2026-07-24T09:31:22.164Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-24T09:31:22.166Z] [INFO] [ApiClient] GET customers/CUST-1784885482163-a82d8775 -> 200
+[2026-07-24T09:31:22.166Z] [INFO] [data.fixtures] Seeded customer {"id":"CUST-1784885482163-a82d8775"}
+[2026-07-24T09:31:22.168Z] [INFO] [ApiClient] POST customers/CUST-1784885482163-a82d8775/accounts -> 201
+[2026-07-24T09:31:22.169Z] [INFO] [data.fixtures] Seeded account {"id":"ACC-1784885482168-79515cb9","accountNumber":"4122057414"}
+[2026-07-24T09:31:22.172Z] [INFO] [ApiClient] POST customers/CUST-1784885482163-a82d8775/accounts -> 201
+[2026-07-24T09:31:22.178Z] [INFO] [ApiClient] DELETE accounts/ACC-1784885482171-e412b8b3 -> 200
+[2026-07-24T09:31:22.178Z] [INFO] [ApiClient] POST accounts/transfer -> 201
+[2026-07-24T09:31:22.181Z] [INFO] [transfer-resilience.steps] CONC-03 confirmed race: transfer succeeded against a concurrently-deleted account {"transactionCount":1}
+[2026-07-24T09:31:22.185Z] [INFO] [ApiClient] DELETE accounts/ACC-1784885482168-79515cb9 -> 200
+[2026-07-24T09:31:22.185Z] [INFO] [data.fixtures] Deleted seeded account {"id":"ACC-1784885482168-79515cb9"}
+[2026-07-24T09:31:22.188Z] [INFO] [ApiClient] DELETE customers/CUST-1784885482163-a82d8775 -> 200
+[2026-07-24T09:31:22.188Z] [INFO] [data.fixtures] Deleted seeded customer {"id":"CUST-1784885482163-a82d8775"}

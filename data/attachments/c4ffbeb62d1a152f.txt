@@ -1,1 +1,0 @@
-[2026-07-23T12:11:10.065Z] [INFO] [ApiClient] GET health -> 200

@@ -1,0 +1,3 @@
+[2026-07-24T09:31:15.283Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:15.283Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784885475192-3bd52d","userId":"USER-1784885475282-8d1452f9"}
+[2026-07-24T09:31:15.289Z] [INFO] [ApiClient] DELETE customers/CUST-does-not-exist -> 200

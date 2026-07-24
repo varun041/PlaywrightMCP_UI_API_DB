@@ -1,0 +1,6 @@
+[2026-07-24T09:31:31.317Z] [INFO] [TestDataLoader] Loaded user_authentication.yml {"keys":["POS-01","NEG-01","NEG-03","NEG-04","SEC-06","AUTHN-07"]}
+[2026-07-24T09:31:31.410Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:31.502Z] [INFO] [ApiClient] POST auth/login -> 200
+[2026-07-24T09:31:31.594Z] [INFO] [ApiClient] POST auth/login -> 200
+[2026-07-24T09:31:31.598Z] [INFO] [ApiClient] GET customers -> 200
+[2026-07-24T09:31:31.600Z] [INFO] [ApiClient] GET customers -> 200

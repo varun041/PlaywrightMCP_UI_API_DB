@@ -1,0 +1,1 @@
+[2026-07-24T09:31:22.462Z] [WARN] [transfer-resilience.steps] @KnownGap: POST /accounts/transfer has no idempotency key (Requirement.md R-5) — a client retry double-transfers funds.

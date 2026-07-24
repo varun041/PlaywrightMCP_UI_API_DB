@@ -1,0 +1,15 @@
+[2026-07-24T09:31:22.022Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:22.022Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784885481930-ea94ee","userId":"USER-1784885482020-faabb58f"}
+[2026-07-24T09:31:22.028Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-24T09:31:22.029Z] [INFO] [ApiClient] GET customers/CUST-1784885482027-280b75e7 -> 200
+[2026-07-24T09:31:22.030Z] [INFO] [data.fixtures] Seeded customer {"id":"CUST-1784885482027-280b75e7"}
+[2026-07-24T09:31:22.032Z] [INFO] [ApiClient] POST customers/CUST-1784885482027-280b75e7/accounts -> 201
+[2026-07-24T09:31:22.033Z] [INFO] [data.fixtures] Seeded account {"id":"ACC-1784885482032-38edaa10","accountNumber":"6250082203"}
+[2026-07-24T09:31:22.037Z] [INFO] [ApiClient] POST customers/CUST-1784885482027-280b75e7/accounts -> 201
+[2026-07-24T09:31:22.044Z] [INFO] [ApiClient] POST accounts/transfer -> 201
+[2026-07-24T09:31:22.044Z] [INFO] [ApiClient] POST accounts/transfer -> 201
+[2026-07-24T09:31:22.046Z] [INFO] [transfer-resilience.steps] CONC-01 race outcome (informational — not a hard pass/fail on which outcome "should" happen) {"firstStatus":201,"secondStatus":201,"finalBalance":-300,"succeededCount":2}
+[2026-07-24T09:31:22.051Z] [INFO] [ApiClient] DELETE accounts/ACC-1784885482032-38edaa10 -> 200
+[2026-07-24T09:31:22.051Z] [INFO] [data.fixtures] Deleted seeded account {"id":"ACC-1784885482032-38edaa10"}
+[2026-07-24T09:31:22.054Z] [INFO] [ApiClient] DELETE customers/CUST-1784885482027-280b75e7 -> 200
+[2026-07-24T09:31:22.054Z] [INFO] [data.fixtures] Deleted seeded customer {"id":"CUST-1784885482027-280b75e7"}

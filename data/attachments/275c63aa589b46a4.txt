@@ -1,0 +1,1 @@
+[2026-07-24T09:31:30.038Z] [WARN] [security.steps] @KnownGap: No ownership model exists (Requirement.md R-2) — any authenticated user can fetch any customer/account by id (IDOR).

@@ -1,1 +1,0 @@
-[2026-07-23T12:11:02.747Z] [WARN] [security.steps] @KnownGap: No role/permission model exists (Requirement.md R-2) — any authenticated user can perform destructive actions.

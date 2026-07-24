@@ -1,0 +1,8 @@
+[2026-07-24T09:31:54.290Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:54.291Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784885514198-ef60a3","userId":"USER-1784885514289-ae78315a"}
+[2026-07-24T09:31:54.469Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-24T09:31:54.472Z] [INFO] [ApiClient] GET customers/CUST-1784885514467-2dc273d9 -> 200
+[2026-07-24T09:31:54.472Z] [INFO] [data.fixtures] Seeded customer {"id":"CUST-1784885514467-2dc273d9"}
+[2026-07-24T09:31:54.866Z] [INFO] [AppNavigator] Logged in {"username":"teller_1784885514198-ef60a3"}
+[2026-07-24T09:31:55.131Z] [INFO] [ApiClient] DELETE customers/CUST-1784885514467-2dc273d9 -> 200
+[2026-07-24T09:31:55.131Z] [INFO] [data.fixtures] Deleted seeded customer {"id":"CUST-1784885514467-2dc273d9"}

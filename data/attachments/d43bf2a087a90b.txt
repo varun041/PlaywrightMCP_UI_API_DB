@@ -1,1 +1,0 @@
-[2026-07-23T12:11:07.166Z] [WARN] [session.steps] @KnownGap: No server-side JWT revocation exists (Requirement.md R-11) — a token captured before logout remains valid.

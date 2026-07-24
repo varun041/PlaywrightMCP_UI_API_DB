@@ -1,0 +1,6 @@
+[2026-07-24T09:31:18.860Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:18.860Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784885478767-a7b057","userId":"USER-1784885478858-d41ef1f9"}
+[2026-07-24T09:31:19.280Z] [INFO] [AppNavigator] Logged in {"username":"teller_1784885478767-a7b057"}
+[2026-07-24T09:31:19.284Z] [INFO] [ApiClient] POST customers -> 201
+[2026-07-24T09:31:19.286Z] [INFO] [ApiClient] GET customers/CUST-1784885479283-26a2ab99 -> 200
+[2026-07-24T09:31:20.055Z] [INFO] [AccessibilityScanner] Accessibility scan complete {"total":0,"criticalOrSerious":0}

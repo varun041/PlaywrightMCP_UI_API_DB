@@ -1,0 +1,1 @@
+[2026-07-24T09:31:29.927Z] [WARN] [security.steps] @KnownGap: cors() has no origin restriction (Requirement.md R-3) — the API accepted an arbitrary Origin header.

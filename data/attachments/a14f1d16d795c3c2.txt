@@ -1,0 +1,3 @@
+[2026-07-24T09:31:30.057Z] [INFO] [BackendProcessManager] Spawned backend process {"pid":6060,"port":34547,"dbPath":"/home/runner/work/PlaywrightMCP_UI_API_DB/PlaywrightMCP_UI_API_DB/tests/DB/.runtime/banking-1784885463373.db"}
+[2026-07-24T09:31:30.706Z] [INFO] [ApiClient] POST auth/register -> 201
+[2026-07-24T09:31:30.711Z] [INFO] [ProcessUtils] Killed process tree {"pid":6060}

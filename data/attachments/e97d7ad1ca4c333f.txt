@@ -1,1 +1,0 @@
-[2026-07-23T12:11:13.551Z] [INFO] [ApiClient] POST auth/register -> 201

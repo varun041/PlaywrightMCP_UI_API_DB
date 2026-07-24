@@ -1,4 +1,0 @@
-[2026-07-23T12:10:51.561Z] [INFO] [ApiClient] POST auth/register -> 201
-[2026-07-23T12:10:51.561Z] [INFO] [auth.fixtures] Provisioned run-unique user {"username":"teller_1784808651477-ff1123","userId":"USER-1784808651560-dce5c3bb"}
-[2026-07-23T12:10:51.567Z] [INFO] [TestDataLoader] Loaded customer_search_and_directory.yml {"keys":["BND-12"]}
-[2026-07-23T12:10:51.570Z] [INFO] [ApiClient] GET customers/search -> 200
